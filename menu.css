@@ -1,0 +1,387 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #faf0e6; /* Light Beige */
+
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #e63946;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-left h1 {
+    font-size: 2.5rem;
+  }
+  
+  .header-left p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+  
+  /* Header Right Styling */
+.header-right {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .header-right ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .header-right ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .header-right ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+  
+  .header-right ul li a:hover {
+    color: #f1faee; /* Light color change on hover */
+    transform: scale(1.1); /* Slightly increase the size */
+  }
+  
+  .header-right ul li a:hover::before {
+    width: 100%; /* Underline effect on hover */
+  }
+  
+  .header-right ul li a:hover {
+    opacity: 1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Call to Action Button */
+  .cta-btn {
+    background-color: #f1faee;
+    color: #e63946;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e63946;
+    color: #fff;
+    transform: translateY(-3px); /* Slightly lift the button on hover */
+  }
+  
+  
+  /* Menu Section */
+  .menu-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px 40px;
+  }
+  
+  .menu-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .menu-category {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .menu-category h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .menu-items {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+  }
+  
+  /* Individual Menu Card */
+  .menu-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
+  }
+  
+  .menu-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .menu-card-content {
+    padding: 1rem;
+  }
+  
+  .menu-card-content h3 {
+    margin: 0.5rem 0;
+  }
+  
+  .menu-card-content h5 {
+    margin: 0.3rem 0;
+    color: #888;
+  }
+  
+  .menu-card-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-card-content li {
+    margin-bottom: 8px;
+  }
+  
+  .menu-card-content button {
+    margin: 0.3rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    background-color: #f57c00;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-card-content button:hover {
+    background-color: #e65100;
+  }
+  
+  /* Promo Card */
+  .promo-card {
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .promo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Special Section */
+  .special-section {
+    background-color: #fef6e4;
+    padding: 50px 40px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .special-section:hover {
+    background-color: #fff3c4;
+  }
+  
+  .special-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #d62828;
+  }
+  
+  .special-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    color: #555;
+  }
+  
+ /* Promotions Section */
+.promotions-section {
+    background-color: #ffb6b9; /* Soft Light Coral */
+    padding: 50px 40px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .promotions-section:hover {
+    background-color: #ff8b8d; /* Slightly darker coral on hover */
+  }
+  
+  .promotions-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0077b6;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .promotions-section p {
+    font-size: 1.1rem;
+    max-width: 750px;
+    margin: auto;
+    color: #444;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for text */
+  .promotions-section:hover h2,
+  .promotions-section:hover p {
+    color: #ff6f61;
+    transform: scale(1.05);
+  }
+  
+  
+  /* Information Section */
+  .information-section {
+    background-color: #f0efeb;
+    padding: 50px 40px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .information-section:hover {
+    background-color: #e2e0dc;
+  }
+  
+  .information-section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    color: #3d405b;
+  }
+  
+  .information-section p {
+    font-size: 1.1rem;
+    max-width: 750px;
+    margin: auto;
+    color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* This adds space between icons */
+    margin-top: 20px;
+  }
+  
+  
+  .social-links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-links ul li {
+    display: inline-block;
+  }
+  
+
+  .social-links a {
+    color: white;
+    font-size: 1.6rem;
+    opacity: 0.9;
+    padding: 10px;
+    margin: 0 5px; /* ⬅️ This adds horizontal space between icons */
+    border-radius: 40%;
+    background-color: #333;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  
+  .social-links a:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  
+  /* Optional: Icon-specific hover accents */
+  .social-links a:hover .fa-facebook { color: #3b5998; background-color: white; }
+  .social-links a:hover .fa-twitter { color: #1da1f2; background-color: white; }
+  .social-links a:hover .fa-instagram { color: #e1306c; background-color: white; }
+  .social-links a:hover .fa-youtube { color: #ff0000; background-color: white; }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .header-right ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .menu-items,
+    .menu-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

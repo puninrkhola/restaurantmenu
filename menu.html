@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="menu.css" />
+  <!-- Place this inside <head> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+
+</head>
+<body>
+
+  <!-- Header with Navigation -->
+  <header>
+    <div class="header-left">
+      <h1>Gourmet Delights</h1>
+      <p>Explore Our Specially Curated Menu</p>
+    </div>
+    <nav class="header-right">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Reservations</a></li>
+      </ul>
+    </nav>
+    <button class="cta-btn">Order Online</button>
+  </header>
+
+  <!-- Main Menu Container -->
+  <div class="menu-container">
+
+    <!-- Starters & Main Course Row -->
+    <div class="menu-row">
+      <!-- Starters Section -->
+      <div class="menu-category">
+        <h2>🍽 Starters</h2>
+        <div class="menu-items">
+          <div class="menu-card">
+            <img src="bruschetta.jpg" alt="Starter Dish" />
+            <div class="menu-card-content">
+              <h3>Bruschetta</h3>
+              <h5>150 kcal</h5>
+
+              <button>Order Now</button>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="greeksalad.jpg" alt="Starter Dish" />
+            <div class="menu-card-content">
+              <h3>Greek Salad</h3>
+              <h5>120 kcal</h5>
+              <button>Order Now</button>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Course Section -->
+      <div class="menu-category">
+        <h2>🍝 Main Course</h2>
+        <div class="menu-items">
+          <div class="menu-card">
+            <img src="spaghetti Carbonara.jpg" alt="Main Dish" />
+            <div class="menu-card-content">
+              <h3>Spaghetti Carbonara</h3>
+              <h5>650 kcal</h5>
+              <button>Order Now</button>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="grilled steak.jpg" alt="Main Dish" />
+            <div class="menu-card-content">
+              <h3>Grilled Steak</h3>
+              <h5>800 kcal</h5>
+              <button>Order Now</button>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desserts & Drinks Row -->
+    <div class="menu-row">
+      <!-- Desserts Section -->
+      <div class="menu-category">
+        <h2>🍰 Desserts</h2>
+        <div class="menu-items">
+          <div class="menu-card">
+            <img src="chocolate lava cake.jpg" alt="Dessert" />
+            <div class="menu-card-content">
+              <h3>Chocolate Lava Cake</h3>
+              <h5>450 kcal</h5>
+              <button>Order Now</button>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="vanillaicecream.jpg" alt="Dessert" />
+            <div class="menu-card-content">
+              <h3>Vanilla Ice Cream</h3>
+              <h5>300 kcal</h5>
+              <button>Order Now</button>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks Section -->
+      <div class="menu-category">
+        <h2>🥤 Drinks</h2>
+        <div class="menu-items">
+          <div class="menu-card">
+            <img src="orange juice.jpg" alt="Drink" />
+            <div class="menu-card-content">
+              <h3>Orange Juice</h3>
+              <h5>110 kcal</h5>
+              <button>Order Now</button>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="coldcoffee.jpg" alt="Drink" />
+            <div class="menu-card-content">
+              <h3>Cold Coffee</h3>
+              <h5>180 kcal</h5>
+              <button>Order Now</button>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Specials Section -->
+    <div class="menu-category" id="chefs-special">
+        <h2>Chef's Special</h2>
+        <div class="menu-items">
+          <!-- Existing dishes -->
+          <div class="menu-card">
+            <img src="grilled steak.jpg" alt="Grilled Steak">
+            <div class="menu-card-content">
+              <h3>Grilled Steak</h3>
+              <h5>500 kcal</h5>
+              <ul>
+                <li>Juicy, tender, and flame-grilled</li>
+              </ul>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="Butter Garlic Lobster.jpg" alt="Butter Garlic Lobster">
+            <div class="menu-card-content">
+              <h3>Butter Garlic Lobster</h3>
+              <h5>400 kcal</h5>
+              <ul>
+                <li>Fresh lobster with garlic butter</li>
+              </ul>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+      
+          <!-- New dish 1 -->
+          <div class="menu-card">
+            <img src="Mushroom Risotto.jpg" alt="Mushroom Risotto">
+            <div class="menu-card-content">
+              <h3>Mushroom Risotto</h3>
+              <h5>300 kcal</h5>
+              <ul>
+                <li>Creamy risotto with wild mushrooms</li>
+              </ul>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+      
+          <!-- New dish 2 -->
+          <div class="menu-card">
+            <img src="Lamb Chops.jpg" alt="Lamb Chops">
+            <div class="menu-card-content">
+              <h3>Lamb Chops</h3>
+              <h5>700 kcal</h5>
+              <ul>
+                <li>Char-grilled lamb with herbs</li>
+              </ul>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+      
+          <!-- New dish 3 -->
+          <div class="menu-card">
+            <img src="Truffle Alfredo Pasta.jpg" alt="Truffle Alfredo Pasta">
+            <div class="menu-card-content">
+              <h3>Truffle Alfredo Pasta</h3>
+              <h5>500 kcal</h5>
+              <ul>
+                <li>Rich alfredo sauce with truffle oil</li>
+              </ul>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- <div class="menu-category">
+      <h2>🌟 Chef's Specials</h2>
+      <div class="menu-items">
+        <div class="menu-card">
+          <img src="https://source.unsplash.com/400x300/?gourmet" alt="Chef Special" />
+          <div class="menu-card-content">
+            <h3>Chef's Signature Dish</h3>
+            <h5>700 kcal</h5>
+            <button>Order Now</button>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Promotions Section -->
+    <div class="menu-category" id="promotions">
+        <h2>🎉 Promotions & Offers</h2>
+        <div class="menu-items">
+          <!-- Existing offer 1 -->
+          <div class="promo-card">
+            <h3>Happy Hour</h3>
+            <p>Enjoy a 20% discount on all drinks from 4:00 PM to 6:00 PM.</p>
+          </div>
+      
+          <!-- Existing offer 2 -->
+          <div class="promo-card">
+            <h3>Combo Deal</h3>
+            <p>Get a Pizza & Drink combo for just $15.99!</p>
+          </div>
+      
+          <!-- New offer 1 -->
+          <div class="promo-card">
+            <h3>Buy 1 Get 1 Free</h3>
+            <p>Available on all pizzas every Wednesday!</p>
+          </div>
+      
+          <!-- New offer 2 -->
+          <div class="promo-card">
+            <h3>Flat 20% Off</h3>
+            <p>Use code <strong>FRESH20</strong> on orders above ₹499</p>
+          </div>
+      
+          <!-- New offer 3 -->
+          <div class="promo-card">
+            <h3>Weekend Combo Deal</h3>
+            <p>Starter + Main Course + Dessert @ ₹599 only!</p>
+          </div>
+        </div>
+      </div>
+      
+    <!-- <div class="menu-category">
+      <h2>🎉 Promotions & Offers</h2>
+      <div class="menu-items">
+        <div class="promo-card">
+          <h3>Happy Hour</h3>
+          <p>Enjoy a 20% discount on all drinks from 4:00 PM to 6:00 PM.</p>
+        </div>
+        <div class="promo-card">
+          <h3>Combo Deal</h3>
+          <p>Get a Pizza & Drink combo for just $15.99!</p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Dietary Information Section -->
+    <div class="menu-category">
+      <h2>🥗 Dietary Information</h2>
+      <ul class="diet-info">
+        <li>🌱 Vegan Options Available</li>
+        <li>🔒 Gluten-Free Options</li>
+        <li>⚠️ Contains Nuts</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Gourmet Delights. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
